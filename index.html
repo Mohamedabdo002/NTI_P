@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>كل الوجبات</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dishes-section">
+    <h2 class="section-title">كل الوجبات</h2>
+    <div class="scroll-wrapper">
+      <!-- Left Arrow -->
+      <button class="scroll-btn left-arrow" onclick="scrollLeft()">&#10094;</button>
+      <!-- Scrollable Container -->
+      <div class="scroll-container">
+        <div class="scroll-content">
+          <!-- Dish Items (Add or duplicate as needed) -->
+          <div class="category-item">
+            <img src="imgs/Food/dish (1).jpeg" class="category-img" alt="Dish 1">
+            <p class="category-name">Italian</p>
+          </div>
+          <div class="category-item">
+            <img src="imgs/Food/dish (2).jpeg" class="category-img" alt="Dish 2">
+            <p class="category-name">Mexican</p>
+          </div>
+          <div class="category-item">
+            <img src="dish3.jpg" class="category-img" alt="Dish 3">
+            <p class="category-name">Chinese</p>
+          </div>
+          <div class="category-item">
+            <img src="dish4.jpg" class="category-img" alt="Dish 4">
+            <p class="category-name">Indian</p>
+          </div>
+          <div class="category-item">
+            <img src="dish5.jpg" class="category-img" alt="Dish 5">
+            <p class="category-name">Japanese</p>
+          </div>
+          <!-- Add more dishes as needed -->
+        </div>
+      </div>
+      <!-- Right Arrow -->
+      <button class="scroll-btn right-arrow" onclick="scrollRight()">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript for scroll control -->
+  <script src="script.js"></script>
+</body>
+</html>
